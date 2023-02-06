@@ -17,13 +17,13 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: 'Checkout GitHub Action'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: 'Run Azure Functions Action'
         uses: Azure/functions-action@v1
         id: fa
         with:
           app-name: 'cippqlmy6'
-          slot-name: 'production'
+          slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_936c8aa4ec4a4d2f9d25379eccd82b5e }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B04A18871ADE49019F905A08F7404935 }}
