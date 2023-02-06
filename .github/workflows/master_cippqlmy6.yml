@@ -17,10 +17,10 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: 'Checkout GitHub Action'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: 'Run Azure Functions Action'
-        uses: Azure/functions-action@v3
+        uses: Azure/functions-action@v1
         id: fa
         with:
           app-name: 'cippqlmy6'
